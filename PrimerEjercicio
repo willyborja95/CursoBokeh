@@ -1,0 +1,21 @@
+from bokeh.plotting import figure, output_notebook, show
+
+#Datos
+x = [1,2,3,4,5]
+y = [4,6,2,4,3]
+
+#La salida se muestra dentro del notebook
+output_notebook()
+
+#Creacion del canvas
+p = figure(
+    title="Figura lineal",
+    x_axis_label="X Axis",
+    y_axis_label="Y Axis",
+)
+
+#Renderizacion de datos
+p.line(x,y)
+
+#Mostrar grafica
+show(p)
